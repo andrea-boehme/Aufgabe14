@@ -55,7 +55,12 @@ class ArrayClassTest {
         testArray.addElement(2);
         testArray.addElement(5);
         assertEquals(testArray.getElementCount(), 2);
+
+        // assertEquals(2, testArray.getElementCount());
+        // Bei assertEquals sollte man erst "expect", dann Methode aufrufen
     }
+
+
 
 /*
     @AfterEach

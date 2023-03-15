@@ -28,6 +28,8 @@ public class ArrayClass {
             tempArray[elementCount++] = newElement;     // das neue Element in das neue Array hinzufügen
             array = tempArray;                          // das erste Array mit den Daten des neuen Arrays überschreiben
         }
+
+        // array = Arrays.copyOf(array, elementCount*2); macht copy von ersten Array in ein neues Array mit neue Länge
     }
 
     // get-Methode; liefert das Element an bestimmten Stelle (index: Stelle)
