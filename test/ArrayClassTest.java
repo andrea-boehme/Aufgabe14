@@ -46,6 +46,7 @@ class ArrayClassTest {
 
     @Test
     public void getArraySize() {
+
         assertEquals(testArray.getArraySize(), 10);
     }
 
@@ -61,6 +62,24 @@ class ArrayClassTest {
     }
 
 
+    // Ergänze methode zum testen ob Länge tatsächlich verdoppelt. Wenn 12 Elemente (> 10 Elemente), dann Länge 20 (10*2)
+    @Test
+    public void increaseLength() {
+        testArray.addElement(2);
+        testArray.addElement(5);
+        testArray.addElement(4);
+        testArray.addElement(6);
+        testArray.addElement(2);
+        testArray.addElement(5);
+        testArray.addElement(4);
+        testArray.addElement(6);
+        testArray.addElement(2);
+        testArray.addElement(5);
+        testArray.addElement(4);
+        testArray.addElement(6);
+        assertEquals(20, testArray.getArraySize());
+
+    }
 
 /*
     @AfterEach
